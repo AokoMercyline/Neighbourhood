@@ -1,6 +1,7 @@
-{% extends 'registration/base.html' %}
+{% extends 'base.html' %}
 {% load crispy_forms_tags %}
 {% block content %}
+
 <div class="container">
     <div class="row">
         <div class="col-md-3"></div>
@@ -8,7 +9,7 @@
             <form action="" method="POST" novalidate>
                 {% csrf_token %}
                 {{ form|crispy }}
-                <button class="btn btn-sm btn-info">Sign Up</button>
+                <button class="btn btn-sm btn-info">Login</button>
             </form>
         </div>
         <div class="col-md-3"></div>
