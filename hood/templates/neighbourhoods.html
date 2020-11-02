@@ -1,6 +1,14 @@
 {% extends 'base.html' %}
 {% load crispy_forms_tags %}
 {% block content %}
+<style>
+  body{
+      background-image: url('static/images/HOOD 2.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+  }
+</style
 <div class="container-fluid">
 
   <div class="row">
@@ -19,21 +27,14 @@
           <a href="{% url 'single-hood' user.profile.neighbourhood.id %}" class="btn btn-outline-success btn-sm" style="float: right">Explore {{user.profile.neighbourhood.name}} Estate
         </a>
           {% elif not request.user.profile.neighbourhood %}
-          <a href="{% url 'join-hood' hood.id %}" class="btn btn-info btn-sm">Join Neighbourood</a>
+          <a href="{% url 'join-hood' hood.id %}" class="btn btn-success btn-sm">Join Neighbourood</a>
           {% endif %}
         </div>
       </div>
     </div>
     {% endfor %}
   </div>
-    <a href="{% url 'new-hood' %}" class="btn btn-sm btn-info mb-2" style="text-align: center"> New Neighbourhood</a>
+    <a href="{% url 'new-hood' %}" class="btn btn-sm btn-success mb-2" style="text-align: center"> New Neighbourhood</a>
 </div>
 
-<style>
-    body{
-      background-image: url('/static/images/index2.jpg');
-      background-repeat:no-repeat;
-      background-size: cover;
-    }
-  </style>
 {% endblock %}
