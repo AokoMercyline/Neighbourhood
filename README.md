@@ -4,7 +4,7 @@
 * By Aoko Mercyline
 
 ## Description
-This is web application(neighbourhood) that allows user to be in the loop about everything happening in their neighborhood. From contact information of different handyman to meeting announcements or even alerts. User is able to sign up and be able to view different neighbourhoods,join,leave and view details for their neighbourhood.
+This is web application that allows user to be in the loop about everything happening in their neighborhood.User is able to sign up and be able to view different neighbourhoods,join,leave and view details for their neighbourhood.
 
 
 ## Feature
@@ -58,7 +58,7 @@ This is web application(neighbourhood) that allows user to be in the loop about 
 * Django 3.2.1
 * Heroku
 
-## KNown Bugs
+## Known Bugs
 * There are no known bugs at the moment
 
 ## Contact Information
