@@ -1,6 +1,6 @@
 virtual/
 __pycache__
-.env/
+.env
 migrations/
 .vscode
 
